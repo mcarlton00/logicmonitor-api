@@ -19,7 +19,6 @@ Note: Requires the excellent [Python Requests](https://2.python-requests.org/en/
 >>> devices = lm.get('/devices/devices')
 
 >>> pprint(devices['data'])
->>> pprint(devices['data'])
 {'isMin': False,
  'items': [{'alertDisableStatus': 'none-none-none',
             'alertStatus': 'none',
