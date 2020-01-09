@@ -2,7 +2,7 @@
 
 This is a simple python wrapper to simplify using the [LogicMonitor API](https://www.logicmonitor.com/support/rest-api-developers-guide/overview/using-logicmonitors-rest-api/).  Constructing the request to interact with the api is a less than straightforward process, and this aims to abstract all of that away so you can focus on getting work done instead of deciphering API nuances.
 
-Note: Requires the excellent [Python Requests](https://2.python-requests.org/en/master/) library
+Note: Requires Python3.6 or newer and the excellent [Python Requests](https://2.python-requests.org/en/master/) library
 
 ```python
 >>> from logicmonitor import LM
