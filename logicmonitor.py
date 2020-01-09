@@ -55,7 +55,7 @@ class LM():
         # Make request
         response = requests.get(url, headers=headers)
 
-        return response
+        return response.json()
 
     # Does a http POST to the specified endpoint
     def post(self, path='', data={}):
@@ -67,7 +67,7 @@ class LM():
         # Make request
         response = requests.post(url, data=str(data), headers=headers)
 
-        return response
+        return response.json()
 
     # Does a http DELETE to the specified endpoint
     def delete(self, path=''):
@@ -79,4 +79,4 @@ class LM():
         # Make request
         response = requests.delete(url, headers=headers)
 
-        return response
+        return response.json()
