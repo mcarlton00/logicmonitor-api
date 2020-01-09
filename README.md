@@ -1,6 +1,6 @@
 # LogicMonitor-API
 
-This is a simple python wrapper to simplify API calls to the [LogicMonitor service](https://www.logicmonitor.com/).Constructing the authentication headers to make interact with the api is a rather involved process, and this aims to abstract all of that away so you can focus on getting work done instead of deciphering API nuances.
+This is a simple python wrapper to simplify using the [LogicMonitor API](https://www.logicmonitor.com/support/rest-api-developers-guide/overview/using-logicmonitors-rest-api/).  Constructing the request to interact with the api is a less than straightforward process, and this aims to abstract all of that away so you can focus on getting work done instead of deciphering API nuances.
 
 Note: Requires the excellent [Python Requests](https://2.python-requests.org/en/master/) library
 
