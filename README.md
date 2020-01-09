@@ -16,7 +16,7 @@ Note: Requires Python3.6 or newer and the excellent [Python Requests](https://2.
 >>> lm = LM(account_name, access_id, access_key)
 
 >>> # Get a list of all devices in LogicMonitor
->>> devices = lm.get('/devices/devices')
+>>> devices = lm.get('/device/devices')
 
 >>> pprint(devices['data'])
 {'isMin': False,
