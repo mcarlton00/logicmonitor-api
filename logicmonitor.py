@@ -3,6 +3,7 @@ import hashlib
 import base64
 import time
 import hmac
+import json
 
 from urllib.parse import urlencode
 
@@ -26,7 +27,7 @@ class LM():
         epoch = str(int(time.time() * 1000))
 
         # Concatenate Request details
-        request_vars = method + epoch + str(data) + path
+        request_vars = method + epoch + data + path
 
         # Construct signature
         hmac_val = hmac.new(self.access_key.encode(),
@@ -59,13 +60,16 @@ class LM():
 
     # Does a http POST to the specified endpoint
     def post(self, path='', data={}):
+        # Because the LM api is extremely picky and doesn't accept true json
+        data = json.dumps(data)
+
         headers = self.login('POST', path=path, data=data)
 
         # Construct URL
         url = f'https://{self.account_name}.logicmonitor.com/santaba/rest{path}'
 
         # Make request
-        response = requests.post(url, data=str(data), headers=headers)
+        response = requests.post(url, data=data, headers=headers)
 
         return response.json()
 
