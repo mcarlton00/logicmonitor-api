@@ -28,7 +28,7 @@ devices = lm.get('/device/devices', query)
 pprint(devices)
 
 """
-Example output:
+Example Output:
 --------------------
 {'data': {'isMin': False,
           'items': [{'displayName': 'host1.example.com'},

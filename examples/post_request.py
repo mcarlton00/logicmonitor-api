@@ -26,6 +26,8 @@ response = lm.post('/setting/admins/19/apitokens', data)
 pprint(response)
 
 """
+# Example Output:
+--------------------
 {'data': {'accessId': 'fWLD69edrz839S62rZ3W',
           'accessKey': 's=E7w9_NjH3)t+NP2{7]rmr63L=J6-N}xCB_w)^N',
           'adminId': 19,

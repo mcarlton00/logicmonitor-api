@@ -20,5 +20,7 @@ response = lm.delete('/dashboard/dashboards/41')
 pprint(response)
 
 """
+# Example Output:
+--------------------
 {'data': None, 'errmsg': 'OK', 'status': 200}
 """
