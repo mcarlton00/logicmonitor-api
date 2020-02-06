@@ -8,8 +8,8 @@ Note: Requires Python3.6 or newer and the excellent [Python Requests](https://2.
 >>> from logicmonitor import LM
 >>> from pprint import pprint
 
->>> account_name='acme-firework-co',
->>> access_id='Fahpho7Pahghahwo1aeY',
+>>> account_name='acme-firework-co'
+>>> access_id='Fahpho7Pahghahwo1aeY'
 >>> access_key='=oS-iiKuhei5Ahth{e(oph[ei8Ow8pheekai9iGh'
 
 >>> # Initialize your API connections
