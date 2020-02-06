@@ -6,8 +6,8 @@ This script will delete the dashboard with an id of 41
 """
 
 # Authentication Information
-account_name='acme-firework-co',
-access_id='Fahpho7Pahghahwo1aeY',
+account_name='acme-firework-co'
+access_id='Fahpho7Pahghahwo1aeY'
 access_key='=oS-iiKuhei5Ahth{e(oph[ei8Ow8pheekai9iGh'
 
 # Initialize your API connections

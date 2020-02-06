@@ -7,8 +7,8 @@ that currently have an uptime of over 6 months
 """
 
 # Authentication Information
-account_name='acme-firework-co',
-access_id='Fahpho7Pahghahwo1aeY',
+account_name='acme-firework-co'
+access_id='Fahpho7Pahghahwo1aeY'
 access_key='=oS-iiKuhei5Ahth{e(oph[ei8Ow8pheekai9iGh'
 
 # Initialize your API connections
