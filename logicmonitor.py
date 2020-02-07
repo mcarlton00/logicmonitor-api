@@ -84,3 +84,18 @@ class LM():
         response = requests.delete(url, headers=headers)
 
         return response.json()
+
+    # Does a http PUT to the specified endpoint
+    def post(self, path='', data={}):
+        # Because the LM api is extremely picky and doesn't accept true json
+        data = json.dumps(data)
+
+        headers = self.login('PUT', path=path, data=data)
+
+        # Construct URL
+        url = f'https://{self.account_name}.logicmonitor.com/santaba/rest{path}'
+
+        # Make request
+        response = requests.put(url, data=data, headers=headers)
+
+        return response.json()
