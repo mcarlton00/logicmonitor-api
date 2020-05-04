@@ -86,7 +86,7 @@ class LM():
         return response.json()
 
     # Does a http PUT to the specified endpoint
-    def post(self, path='', data={}):
+    def put(self, path='', data={}):
         # Because the LM api is extremely picky and doesn't accept true json
         data = json.dumps(data)
 
